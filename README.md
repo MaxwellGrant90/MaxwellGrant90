@@ -11,7 +11,8 @@ Project 1 - My Construction Story - an annotated time series graph with Matplotl
 
 -A step by step commentary of retreiving a SoQL query from an Socrates API to a cleaned and ready to plot dataframe. A short story about my career is included.
 
-![MyConstructionStory](https://user-images.githubusercontent.com/88124878/127604603-579f85ce-5cc8-48c7-84fe-eda93edcd64c.png)
+![MyConstructionStory](https://user-images.githubusercontent.com/88124878/127684448-288ddf2b-259d-458a-87d1-127c82ac9eb0.png)
+
 
 
 

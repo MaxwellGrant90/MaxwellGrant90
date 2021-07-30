@@ -1,7 +1,7 @@
 -Hi, I’m Maxwell Grant.
--I’m interested and actively seeking opportunities in data science and business intelligence.
--Please take a moment and view my portfolio and contact me if I fit the needs of an open position.
--I can be reached at maxwell.grant90@gmail.com
+I’m interested and actively seeking opportunities in data science and business intelligence.
+Please take a moment and view my portfolio and contact me if I fit the needs of an open position.
+I can be reached at maxwell.grant90@gmail.com
 
 
 

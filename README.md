@@ -1,5 +1,5 @@
 -Hi, I’m Maxwell Grant!
-I am actively seeking opportunities in data science and business intelligence. I graduated in June of 2021 with a MS in Information Systems with a concentration in Data Analytics from Baruch College with a 3.97 GPA.
+I am actively seeking opportunities in data science and business intelligence. I graduated in June of 2021 with a MS in Information Systems with a concentration in Data Analytics from Baruch College. I achieved a 3.97 GPA while working 40 hours a week in construction!
 Please take a moment and view my portfolio. Feel free to contact me if I am a good fit for an open position.
 I can be reached at maxwell.grant90@gmail.com
 

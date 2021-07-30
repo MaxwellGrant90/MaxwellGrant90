@@ -7,7 +7,7 @@ I can be reached at maxwell.grant90@gmail.com
 
 
 
-Project 1 - My Construction Story - an annotated time series graph with Matplotlib in Jupyter Notebooks about the companies I worked for using a public database.
+Project 1 - My Construction Story - an annotated time series graph with Matplotlib in a Jupyter Notebook about the companies I worked for using a public database.
 
 -A step by step commentary of retreiving a SoQL query from an Socrates API to a cleaned and ready to plot dataframe. A short story about my career is included.
 
@@ -18,7 +18,7 @@ Project 1 - My Construction Story - an annotated time series graph with Matplotl
 
 
 
-Project 2 - World Happiness Report 2019 - a Tableau dashboard and a linear regression in Jupyter Notebooks.
+Project 2 - World Happiness Report 2019 - a Tableau dashboard and a linear regression in a Jupyter Notebook.
 
 Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/WorldHappinessReportDashboard_16211719322600/Dashboard1
 

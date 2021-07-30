@@ -18,7 +18,7 @@ Project 1 - My Construction Story - an annotated time series graph with Matplotl
 
 
 
-Project 2 - World Happiness Report 2019 - a Tableau dashboard and a linear regression in Jupyter Notebooks.
+Project 2 - World Happiness Report 2019 - a Tableau dashboard and linear regression in Jupyter Notebooks.
 
 Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/WorldHappinessReportDashboard_16211719322600/Dashboard1
 

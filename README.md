@@ -21,7 +21,7 @@ Project 2 - World Happiness Report 2019 - a Tableau dashboard with a linear regr
 
 Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/WorldHappinessReportDashboard_16211719322600/Dashboard1
 
-The linear regression was built in Scikit-learn with a clean database. Evaluation metrics included.
+The linear regression is built in Scikit-learn with a clean database. Evaluation metrics included.
 
 ![2019 World Happiness Dashboard](https://user-images.githubusercontent.com/88124878/127605308-dff52513-0bf7-4912-bd2a-3a4735cd22d9.png)
 

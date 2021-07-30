@@ -4,6 +4,7 @@ Please take a moment to view my portfolio. Feel free to contact me if I am a goo
 I can be reached at maxwell.grant90@gmail.com
 
 Repository link: https://github.com/MaxwellGrant90/MaxwellGrant90.git
+LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 
 

@@ -1,4 +1,4 @@
--Hi, I’m Maxwell Grant.
+-Hi, I’m Maxwell Grant!
 I’m actively seeking opportunities in data science and business intelligence.
 Please take a moment and view my portfolio and contact me if I am a good fit for an open position.
 I can be reached at maxwell.grant90@gmail.com

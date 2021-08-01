@@ -26,9 +26,11 @@ Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/
 
 The linear regression uses Scikit-learn with a clean database. Evaluation metrics are included.
 
-![2019 World Happiness Dashboard](https://user-images.githubusercontent.com/88124878/127605308-dff52513-0bf7-4912-bd2a-3a4735cd22d9.png)
-
-
+![2019 World Happiness Dashboard](https://user-images.githubusercontent.com/88124878/127758737-fd122727-9051-4ce2-86c9-dfd14cb22dce.png)
+![World Happiness EPA](https://user-images.githubusercontent.com/88124878/127758739-63ba4352-7e8f-41b5-8df5-28e8022bad49.png)
+![World Happiness EPA regplot](https://user-images.githubusercontent.com/88124878/127758741-538e366b-5181-49a3-801e-c9ba63733711.png)
+![World Happiness corr](https://user-images.githubusercontent.com/88124878/127758743-609f4e53-8ba7-49c9-978a-b0fc9877db8a.png)
+![World Happiness Feature Importance](https://user-images.githubusercontent.com/88124878/127758744-1d8b7371-5d91-4966-81ec-497f5d5c7962.png)
 
 
 

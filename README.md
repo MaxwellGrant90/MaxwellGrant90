@@ -9,7 +9,7 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 
 <h1>Project 1 - My Construction Story</h1>
-<h2>- an annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for using a public database with 3.76M rows and counting.</h2>
+<h2>- An annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for using a public database with 3.76M rows and counting.</h2>
 
 -Jupyter Notebook: A step by step commentary of retreiving a SoQL query from an Socrates API to a cleaned and ready to plot dataframe. A short story about my career is included.
 
@@ -21,15 +21,15 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 
 <h1>Project 1 - Project 2 - World Happiness Reports 2005-2020</h1>
-<h2>- a Tableau dashboard and a linear regression in a Jupyter Notebook with exploratory data analysis.</h2>
+<h2>- A Tableau dashboard and a linear regression in a Jupyter Notebook with exploratory data analysis.</h2>
 
-<h5>- Tableau dashboard</h5>
+<h3>- Tableau dashboard</h3>
 -Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/WorldHappinessReportDashboard_16211719322600/Dashboard1
 -Regions, longitude, and latitude added to the database
 
 ![2019 World Happiness Dashboard](https://user-images.githubusercontent.com/88124878/127758737-fd122727-9051-4ce2-86c9-dfd14cb22dce.png)
 
-<h5>- Exploratory Data Analysis and Feature Importance dashboard</h5>
+<h3>- Exploratory data analysis and feature importance</h3>
 -Jupyter Notebook: Includes evaluation metrics.
 
 ![World Happiness EPA](https://user-images.githubusercontent.com/88124878/127758739-63ba4352-7e8f-41b5-8df5-28e8022bad49.png)

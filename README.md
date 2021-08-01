@@ -28,7 +28,8 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 -Regions, longitude, and latitude added to the database
 
-![2019 World Happiness Dashboard](https://user-images.githubusercontent.com/88124878/127758737-fd122727-9051-4ce2-86c9-dfd14cb22dce.png)
+![World Happiness Dashboard](https://user-images.githubusercontent.com/88124878/127759600-21b8333d-7d03-4869-bd19-47ceba8c48e9.png)
+
 
 <h3>- Exploratory data analysis and feature importance</h3>
 -Jupyter Notebook: includes evaluation metrics.

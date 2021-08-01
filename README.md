@@ -13,12 +13,7 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 -Jupyter Notebook: A step by step commentary about retreiving a SoQL query from an Socrates API to a clean and ready to plot dataframe. A short story about my career is included as well.
 
-![MyConstructionStory](https://user-images.githubusercontent.com/88124878/127684448-288ddf2b-259d-458a-87d1-127c82ac9eb0.png)
-
-
-
-
-
+![MyConstructionStory](https://user-images.githubusercontent.com/88124878/127779601-3fc71140-9660-46fb-bc5a-06b522f9cbe8.png)
 
 <h1>Project 2 - World Happiness Reports 2005-2020</h1>
 <h2>- A Tableau dashboard and a linear regression in a Jupyter Notebook with exploratory data analysis.</h2>
@@ -35,9 +30,9 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 <h3>- Exploratory data analysis and feature importance</h3>
 -Jupyter Notebook: includes evaluation metrics.
 
-![World Happiness EPA](https://user-images.githubusercontent.com/88124878/127758739-63ba4352-7e8f-41b5-8df5-28e8022bad49.png)
+![World Happiness EPA](https://user-images.githubusercontent.com/88124878/127779616-f9edf24b-5c56-4967-a8b1-42b3989d4820.png)
 ![World Happiness EPA regplot](https://user-images.githubusercontent.com/88124878/127758741-538e366b-5181-49a3-801e-c9ba63733711.png)
-![World Happiness corr](https://user-images.githubusercontent.com/88124878/127758743-609f4e53-8ba7-49c9-978a-b0fc9877db8a.png)
+![World Happiness corr](https://user-images.githubusercontent.com/88124878/127779610-2bede530-e348-448b-9184-a4e8ea0067dc.png)
 ![World Happiness Feature Importance](https://user-images.githubusercontent.com/88124878/127758744-1d8b7371-5d91-4966-81ec-497f5d5c7962.png)
 
 

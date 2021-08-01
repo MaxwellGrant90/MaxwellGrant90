@@ -11,7 +11,7 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 <h1>Project 1 - My Construction Story</h1>
 <h2>- an annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for using a public database with 3.76M rows and counting.</h2>
 
--A step by step commentary of retreiving a SoQL query from an Socrates API to a cleaned and ready to plot dataframe. A short story about my career is included.
+-Jupyter Notebook: A step by step commentary of retreiving a SoQL query from an Socrates API to a cleaned and ready to plot dataframe. A short story about my career is included.
 
 ![MyConstructionStory](https://user-images.githubusercontent.com/88124878/127684448-288ddf2b-259d-458a-87d1-127c82ac9eb0.png)
 
@@ -20,7 +20,8 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 
 
-Project 2 - World Happiness Report 2019 - a Tableau dashboard and a linear regression in a Jupyter Notebook.
+<h1>Project 1 - Project 2 - World Happiness Reports 2005-2020</h1>
+<h2>- a Tableau dashboard and a linear regression in a Jupyter Notebook with exploratory data analysis.</h2>
 
 Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/WorldHappinessReportDashboard_16211719322600/Dashboard1
 

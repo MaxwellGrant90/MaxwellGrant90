@@ -23,11 +23,15 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 <h1>Project 1 - Project 2 - World Happiness Reports 2005-2020</h1>
 <h2>- a Tableau dashboard and a linear regression in a Jupyter Notebook with exploratory data analysis.</h2>
 
-Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/WorldHappinessReportDashboard_16211719322600/Dashboard1
-
-The linear regression uses Scikit-learn with a clean database. Evaluation metrics are included.
+<h5>- Tableau dashboard</h5>
+-Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/WorldHappinessReportDashboard_16211719322600/Dashboard1
+-Regions, longitude, and latitude added to the database
 
 ![2019 World Happiness Dashboard](https://user-images.githubusercontent.com/88124878/127758737-fd122727-9051-4ce2-86c9-dfd14cb22dce.png)
+
+<h5>- Exploratory Data Analysis and Feature Importance dashboard</h5>
+-Jupyter Notebook: Includes evaluation metrics.
+
 ![World Happiness EPA](https://user-images.githubusercontent.com/88124878/127758739-63ba4352-7e8f-41b5-8df5-28e8022bad49.png)
 ![World Happiness EPA regplot](https://user-images.githubusercontent.com/88124878/127758741-538e366b-5181-49a3-801e-c9ba63733711.png)
 ![World Happiness corr](https://user-images.githubusercontent.com/88124878/127758743-609f4e53-8ba7-49c9-978a-b0fc9877db8a.png)

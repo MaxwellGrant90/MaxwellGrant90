@@ -7,9 +7,9 @@ Repository link: https://github.com/MaxwellGrant90/MaxwellGrant90.git
 
 LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
-<h1>Main page heading here</h1>
 
-Project 1 - My Construction Story - an annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for using a public database with 3.76M rows and counting.
+<h1>Project 1 - My Construction Story</h1>
+<h2>- an annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for using a public database with 3.76M rows and counting.</h2>
 
 -A step by step commentary of retreiving a SoQL query from an Socrates API to a cleaned and ready to plot dataframe. A short story about my career is included.
 

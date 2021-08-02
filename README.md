@@ -9,19 +9,19 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 
 <h1>Project 1 - My Construction Story</h1>
-<h2>- An annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for. The dataset was extracted from a NYC Department of Buildings public database with 3.76M rows and counting.</h2>
+<h2>- An annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for. The dataset was extracted from a NYC Department of Buildings public database with over 3.76M rows.</h2>
 
 -Jupyter Notebook: A step by step commentary about retreiving a SoQL query from an Socrates API to a clean and ready to plot dataframe. A short story about my career is included as well.
 
 ![MyConstructionStory](https://user-images.githubusercontent.com/88124878/127779601-3fc71140-9660-46fb-bc5a-06b522f9cbe8.png)
 
 <h1>Project 2 - World Happiness Reports 2005-2020</h1>
-<h2>- A Tableau dashboard and a linear regression in a Jupyter Notebook with exploratory data analysis.</h2>
+<h2>- A Tableau dashboard and a linear regression in a Jupyter Notebook with exploratory data analysis and feature importance.</h2>
 
 <h3>- Tableau dashboard</h3>
 -Link to the dashboard: https://public.tableau.com/app/profile/maxwell.grant/viz/WorldHappinessReportDashboard_16211719322600/Dashboard1
 
--Regions, longitude, and latitude added to the database
+-Regions, longitude, and latitude added to the dataset.
 
 ![World Happiness Dashboard](https://user-images.githubusercontent.com/88124878/127759660-bc014a4f-9cd0-4e93-aea0-32e6aa0dfd38.png)
 

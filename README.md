@@ -49,7 +49,7 @@ ORDER BY p.score DESC
 
 
 ![Entity-Relationship Model](https://user-images.githubusercontent.com/88124878/127949636-9e9f5b39-3496-4ee1-a434-0851731e74c9.png)
--This database focuses on entity relationships and normalization. It is missing employee information like address, contact information, and more detailed information. 
+-This database focuses on entity relationships and normalization. It is missing employee information like addresses, contact information, and more detailed information. 
 
 MORE PROJECTS COMING SOON!
 

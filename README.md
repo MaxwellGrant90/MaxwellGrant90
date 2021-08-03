@@ -37,7 +37,7 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 
 <h1>Project 3 - Entity-Relationship Model</h1>
-<h2>- A database schema of a human resource system with a SQL query</h2>
+<h2>- A database schema of a human resource system with SQL Statements</h2>
 -SQL statement (Oracle syntax) to query first name, last name, job title, department, performance score, and salary. Ordered by performance score: <br><br>
 SELECT e.firstname, e.lastname, t.title, t.department, p.score, s.salary<br>
 FROM title t INNER JOIN<br>
@@ -45,7 +45,8 @@ performance p ON t.title = p.title<br>
 INNER JOIN employee e USING (employeeid)<br>
 INNER JOIN salary s USING (employeeid)<br>
 WHERE s.active__ = 'TRUE' AND p.active_ = 'TRUE'<br> 
-ORDER BY p.score DESC
+ORDER BY p.score DESC<br><br>
+-Table create statements and mock data insert statements are in a .txt file.
 
 ![Entity-Relationship Model](https://user-images.githubusercontent.com/88124878/127951189-8b6599ac-1d8f-4516-aa79-6d3f53a3c659.png)
 -This database focuses on entity relationships and normalization. It is missing employee information like addresses, contact information, and more detailed information. 

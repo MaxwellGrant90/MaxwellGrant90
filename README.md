@@ -38,7 +38,7 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 <h1>Project 3 - Entity-Relationship Model</h1>
 <h2>- A database schema of a human resource system with SQL join statements</h2>
--SQL statement (Oracle syntax) to query first name, last name, job title, department, performance score, and salary. Ordered by performance score: <br>
+-SQL statement (Oracle syntax) to query first name, last name, job title, department, performance score, and salary. Ordered by performance score: <br><br>
 SELECT e.firstname, e.lastname, t.title, t.department, p.score, s.salary<br>
 FROM title t INNER JOIN<br>
 performance p ON t.title = p.title<br>

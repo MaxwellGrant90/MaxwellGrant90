@@ -45,7 +45,7 @@ INNER JOIN employee e USING (employeeid)<br>
 INNER JOIN salary s USING (employeeid)<br>
 WHERE s.active__ = 'TRUE' AND p.active_ = 'TRUE'<br> 
 ORDER BY p.score DESC<br><br>
--Table create and mock data insert into statements are in a .txt file.
+-Table create and insert into statements with mock data are in a .txt file.
 
 ![Entity-Relationship Model](https://user-images.githubusercontent.com/88124878/127951189-8b6599ac-1d8f-4516-aa79-6d3f53a3c659.png)
 -This database focuses on entity relationships and normalization. It does not contain detailed information. 

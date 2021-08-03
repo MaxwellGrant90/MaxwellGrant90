@@ -44,11 +44,10 @@ FROM title t INNER JOIN<br>
 performance p ON t.title = p.title<br>
 INNER JOIN employee e USING (employeeid)<br>
 INNER JOIN salary s USING (employeeid)<br>
-WHERE s.active = 'TRUE' AND p.active_ = 'TRUE'<br> 
+WHERE s.active__ = 'TRUE' AND p.active_ = 'TRUE'<br> 
 ORDER BY p.score DESC
 
-
-![Entity-Relationship Model](https://user-images.githubusercontent.com/88124878/127949636-9e9f5b39-3496-4ee1-a434-0851731e74c9.png)
+![Entity-Relationship Model](https://user-images.githubusercontent.com/88124878/127951189-8b6599ac-1d8f-4516-aa79-6d3f53a3c659.png)
 -This database focuses on entity relationships and normalization. It is missing employee information like addresses, contact information, and more detailed information. 
 
 MORE PROJECTS COMING SOON!

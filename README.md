@@ -36,6 +36,20 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 ![World Happiness Feature Importance](https://user-images.githubusercontent.com/88124878/127758744-1d8b7371-5d91-4966-81ec-497f5d5c7962.png)
 
 
+<h1>Project 3 - Entity-Relationship Model</h1>
+<h2>- A database schema of a human resource system with SQL join statements</h2>
+-SQL statement (Oracle syntax) to query first name, last name, job title, department, performance score, and salary. Ordered by performance score: <br>
+SELECT e.firstname, e.lastname, t.title, t.department, p.score, s.salary<br>
+FROM title t INNER JOIN<br>
+performance p ON t.title = p.title<br>
+INNER JOIN employee e USING (employeeid)<br>
+INNER JOIN salary s USING (employeeid)<br>
+WHERE s.active = 'TRUE' AND p.active_ = 'TRUE'<br> 
+ORDER BY p.score DESC
+
+
+![Entity-Relationship Model](https://user-images.githubusercontent.com/88124878/127949636-9e9f5b39-3496-4ee1-a434-0851731e74c9.png)
+-This database focuses on entity relationships. It is missing employee information like addresses, contact information, and more detailed information. 
 
 MORE PROJECTS COMING SOON!
 

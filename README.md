@@ -8,7 +8,7 @@ LinkedIn link: https://www.linkedin.com/in/maxwell-grant/
 
 
 <h1>Project 1 - My Construction Story</h1>
-<h2>- An annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for. The dataset was extracted from a NYC Department of Buildings public database with over 3.76M rows.</h2>
+<h2>- An annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for. The dataset was extracted from a NYC Department of Buildings public database with over 3.7M rows.</h2>
 
 -Jupyter Notebook: A step by step commentary about retreiving a SoQL query from an Socrates API to a clean and ready to plot dataframe. A short story about my career is included as well.
 

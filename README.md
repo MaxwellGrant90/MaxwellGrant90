@@ -1,5 +1,5 @@
 -Hi, I’m Maxwell Grant!
-I am actively seeking opportunities in data science, data engineering, and business intelligence. In June of 2021, I achieved a MS in Information Systems with a concentration in Data Analytics from Baruch College while working 40 hours a week in construction management. It's time to put my skillset in data analytics and engineering to use! Please take a moment to view my portfolio. Feel free to contact me if I am a good fit for an open position.
+I am actively seeking opportunities in data science, data engineering, and business intelligence. In June of 2021, I achieved a MS in Information Systems with a concentration in Data Analytics from Baruch College while working 40 hours a week in construction management. Please take a moment to view my portfolio. Feel free to contact me if I am a good fit for an open position.
 I can be reached at maxwell.grant90@gmail.com
 
 Repository link: https://github.com/MaxwellGrant90/MaxwellGrant90.git

@@ -4,7 +4,7 @@
 
 -Jupyter Notebook: A step by step commentary about retreiving a SoQL query from an Socrates API to a clean and ready to plot data frame. A short story about my career is included.
 
-![MyConstructionStory](https://user-images.githubusercontent.com/88124878/215350462-350b93c8-7697-41a7-a709-9e06137f9c7d.png)
+
 ![jupyter-notebook](https://user-images.githubusercontent.com/88124878/215350565-cd49fb23-2364-48ef-8162-86d690c96455.jpg)
 
 

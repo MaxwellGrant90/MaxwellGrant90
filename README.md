@@ -2,10 +2,7 @@
 
 <h2>-An annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for. The dataset is from a NYC Department of Buildings public database API.</h2>
 
--Jupyter Notebook: A step by step commentary about retreiving a SoQL query from an Socrates API to a clean and ready to plot data frame. A short story about my career is included.
-
-
-![jupyter-notebook](https://user-images.githubusercontent.com/88124878/215350565-cd49fb23-2364-48ef-8162-86d690c96455.jpg)
+![my_construction_story](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/1440fc59-05c0-489f-97ca-f53294bd2975)
 
 
 

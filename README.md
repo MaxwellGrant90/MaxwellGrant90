@@ -1,6 +1,6 @@
 <h1> Portfolio </h1>
 
-<h2>-An annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for. The dataset is from a NYC Department of Buildings public database API.</h2>
+<h2>-An annotated time series graph with Matplotlib in a Jupyter Notebook about companies I worked for. The dataset is from my three-tier real estate warehouse sourced from NYC Open Data.</h2>
 
 ![my_construction_story](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/1440fc59-05c0-489f-97ca-f53294bd2975)
 

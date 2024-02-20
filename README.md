@@ -28,15 +28,6 @@
 
 
 <br><br><br><h2>-A database schema of a human resource system with SQL</h2>
--SQL statement (Oracle syntax) to query first name, last name, job title, department, performance score, and salary; ordered by performance score: <br><br>
-SELECT e.firstname, e.lastname, t.title, t.department, p.score, s.salary<br>
-FROM title t <br>
-INNER JOIN performance p<br>
-ON t.title = p.title<br>
-INNER JOIN employee e USING (employeeid)<br>
-INNER JOIN salary s USING (employeeid)<br>
-WHERE s.active__ = 'TRUE' AND p.active_ = 'TRUE'<br> 
-ORDER BY p.score DESC;<br><br>
 -Table create and insert into statements with mock data are in a .txt file.
 
 ![Entity-Relationship Model](https://user-images.githubusercontent.com/88124878/127951189-8b6599ac-1d8f-4516-aa79-6d3f53a3c659.png)

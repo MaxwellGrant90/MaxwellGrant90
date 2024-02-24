@@ -1,8 +1,10 @@
 <h1> Portfolio </h1>
 
-<h2>-An annotated time series graph with Matplotlib about companies I worked for. The dataset is from my three-tier real estate warehouse in Google BigQuery sourced from NYC Open Data.</h2>
+<h2>-Annotated time series graphs with Matplotlib about companies I worked for. The dataset is from my three-tier real estate warehouse in Google BigQuery sourced from NYC Open Data. The first visual displays the contract (job) count per year, and the second visual displays the contract dollar amount per year. The dollar amount excludes change orders and is lower than the actual contract amount because mobilization and scaffolding are not always recorded with the NYC Department of Buildings. It's mainly repair work items. </h2>
 
-![my_construction_story](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/1440fc59-05c0-489f-97ca-f53294bd2975)
+![my_construction_story_count_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/31ba493c-eaba-4293-a6b6-3b7874c3d284)
+
+![my_construction_story_dollar_amt_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/862f12c7-7b4a-4053-9e14-ed95fa0b979f)
 
 
 

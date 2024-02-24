@@ -1,10 +1,13 @@
 <h1> Portfolio </h1>
 
-<h2>-Annotated time series graphs with Matplotlib about companies I worked for. The dataset is from my three-tier real estate warehouse in Google BigQuery sourced from NYC Open Data. The first visual displays the contract (job) count per year, and the second visual displays the contract dollar amount per year. The dollar amount excludes change orders and is lower than the actual contract amount because mobilization and scaffolding are not always recorded with the NYC Department of Buildings. It's mainly repair work items. </h2>
+<h2>-Annotated time series graphs with Matplotlib about companies I worked for during my eight year in NYC high-rise building exterior restoration. The dataset is from my three-tier real estate warehouse in Google BigQuery sourced from NYC Open Data. The first visual displays the contract (job) count per year</h2>
+![my_construction_story_count_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/bbda86e0-c3f5-4abe-9d58-98ec02ca0ccc)
 
-![my_construction_story_count_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/31ba493c-eaba-4293-a6b6-3b7874c3d284)
 
-![my_construction_story_dollar_amt_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/862f12c7-7b4a-4053-9e14-ed95fa0b979f)
+<h3>-The second visual displays the contract dollar amount per year. The dollar amount excludes change orders and is lower than the actual contract amount because mobilization and scaffolding are not always recorded with the NYC Department of Buildings. It's mainly repair work items. </h3>
+![my_construction_story_dollar_amt_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/e4f2b7a5-ec35-4e17-987e-37bc430af648)
+
+
 
 
 

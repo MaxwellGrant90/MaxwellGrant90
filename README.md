@@ -1,6 +1,6 @@
 <h1> Portfolio </h1>
 
-<h2>-Annotated time series graphs with Matplotlib about companies I worked for during my eight year in NYC high-rise building exterior restoration. The dataset is from my three-tier real estate warehouse in Google BigQuery sourced from NYC Open Data. The first visual displays the contract (job) count per year</h2>
+<h2>-Annotated time series graphs with Matplotlib about companies I worked for during my eight years in NYC high-rise building exterior restoration/construction. The dataset is from my three-tier real estate warehouse in Google BigQuery sourced from NYC Open Data. The first visual displays the contract (job) count per year</h2>
 
 ![my_construction_story_count_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/bbda86e0-c3f5-4abe-9d58-98ec02ca0ccc)
 

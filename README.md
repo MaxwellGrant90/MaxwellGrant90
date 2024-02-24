@@ -5,7 +5,7 @@
 ![my_construction_story_count_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/bbda86e0-c3f5-4abe-9d58-98ec02ca0ccc)
 
 
-<h3>-The second visual displays the contract dollar amount per year. The dollar amount excludes change orders and is lower than the actual contract amount because mobilization and scaffolding are not always recorded with the NYC Department of Buildings. It's mainly repair work items. </h3>
+<h3>-The second visual displays the contract dollar amount per year. The dollar amount excludes change orders and is lower than the actual contract amount because mobilization, scaffolding, and general conditions are not always recorded with the NYC Department of Buildings. It's mainly repair work items. </h3>
 
 ![my_construction_story_dollar_amt_year](https://github.com/MaxwellGrant90/MaxwellGrant90/assets/88124878/e4f2b7a5-ec35-4e17-987e-37bc430af648)
 

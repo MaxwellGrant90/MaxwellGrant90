@@ -65,28 +65,36 @@ flowchart LR
     A[NYC Open Data<br/>permits · filings · property · housing · landmarks]
     B[City geometry<br/>3D building model · tax map · districts · open map data]
   end
+  L[(Raw lake<br/>source files, as published)]
   subgraph Warehouse["Warehouse · Google BigQuery"]
-    C[Bronze<br/>raw, as published] --> D[Silver<br/>cleaned, typed, joined to buildings] --> E[Gold<br/>analysis-ready marts]
+    C[Bronze<br/>relational model] --> D[Silver<br/>summarized wide tables] --> E[Gold<br/>analysis-ready marts]
   end
+  S[Spice AI<br/>accelerated SQL · NL-to-SQL]
   subgraph Serving
     F[Dashboards & reports]
-    G[Geospatial snapshots]
+    G[Geospatial snapshots<br/>GeoParquet · SedonaDB]
     H[AI analyst]
   end
-  A --> C
-  B --> C
-  E --> F
+  A --> L
+  B --> L
+  L --> C
+  E --> S
   E --> G
-  E --> H
+  S --> F
+  S --> H
 ```
 
 **Data architecture**
-- **Medallion warehouse:** raw city data lands in a bronze layer exactly as published. Silver cleans, types and de-duplicates it and ties every record to a building. Gold holds analysis-ready marts by building, contractor, neighborhood and year.
-- **Building-centric model:** permits, filings, inspections, sales, assessments, housing and landmark records share one building key, so any building's full history is a single lookup and portfolio questions stay a single query.
+- **Raw lake:** source files land untouched, exactly as the city publishes them, so every load can be replayed and audited.
+- **Bronze, relational model:** the raw data is modeled into typed fact and dimension tables with keys and relationships, the system of record for everything above it.
+- **Silver, summarized wide tables:** bronze is joined and rolled up into wide, denormalized tables per subject and time grain, so heavy joins happen once in the pipeline, not at query time.
+- **Gold, analysis-ready marts:** silver is shaped into marts that each serve a dashboard, map or report directly.
+- **Building-centric model:** permits, filings, inspections, sales, assessments, housing and landmark records share one building key from bronze up, so any building's full history is a single lookup and portfolio questions stay a single query.
 - **Geometry as first-class data:** 3D building geometry, tax lots and historic district boundaries sit in the warehouse beside the records, so measurements and spatial joins run where the data lives.
 - **Containerized pipelines:** ingestion and transforms run as dependency-ordered container jobs on Cloud Run, so each layer rebuilds only after the layers it depends on.
-- **Fast serving layers:** BigQuery stays the source of truth. Dashboards read pre-aggregated gold tables, and map views read compact geospatial snapshots, so the app never scans raw data.
-- **Documented for people and AI:** every table and column carries a business description and data type, which powers the AI analyst and keeps its answers grounded in the schema.
+- **Spice AI serving layer:** the Spice AI runtime materializes gold marts into local accelerated copies next to the app, so dashboards query them with low-latency SQL instead of going back to the warehouse. BigQuery stays the source of truth, and map views run spatial queries with SedonaDB over compact GeoParquet snapshots exported from the warehouse, so the app never scans raw data.
+- **AI analyst on Spice AI:** plain-English questions become SQL through Spice AI's natural-language-to-SQL, checked and corrected by tools before they run against the same accelerated marts the dashboards use.
+- **Documented for people and AI:** every table and column carries a business description and data type, which grounds the analyst's SQL in the real schema.
 - **Privacy by design:** public surfaces show signals and tiers computed inside the warehouse, never personal contact details.
 
 **Application**
@@ -104,8 +112,9 @@ flowchart LR
   <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0b1220?style=flat-square&logo=postgresql&logoColor=00aaff">
   <img alt="SQLite" src="https://img.shields.io/badge/Turso%20%C2%B7%20SQLite-0b1220?style=flat-square&logo=sqlite&logoColor=00aaff">
   <img alt="Cloud Run" src="https://img.shields.io/badge/Cloud%20Run-0b1220?style=flat-square&logo=googlecloud&logoColor=ffa500">
+  <img alt="Spice AI" src="https://img.shields.io/badge/Spice%20AI-0b1220?style=flat-square&logoColor=00aaff">
   <img alt="DuckDB" src="https://img.shields.io/badge/DuckDB-0b1220?style=flat-square&logo=duckdb&logoColor=ffa500">
-  <img alt="GeoParquet" src="https://img.shields.io/badge/GeoParquet-0b1220?style=flat-square&logo=apacheparquet&logoColor=00aaff">
+  <img alt="GeoParquet and SedonaDB" src="https://img.shields.io/badge/GeoParquet%20%C2%B7%20SedonaDB-0b1220?style=flat-square&logo=apacheparquet&logoColor=00aaff">
   <img alt="Stripe" src="https://img.shields.io/badge/Stripe-0b1220?style=flat-square&logo=stripe&logoColor=ffa500">
   <img alt="Python" src="https://img.shields.io/badge/Python-0b1220?style=flat-square&logo=python&logoColor=ffa500">
 </p>
@@ -121,7 +130,7 @@ flowchart LR
   <img alt="Line chart of NYC DOB jobs per year, 1998 to 2025, for Skyline Restoration, Accura Restoration, Accura Restoration and Waterproofing, and POFI Construction" src="assets/career_light.png" width="100%">
 </picture>
 
-The four restoration contractors I worked for during my eight years on NYC facades, measured by DOB jobs per year under each firm's General Contractor license. The data comes from my own BigQuery warehouse (NYC Open Data → bronze → silver), queried and drawn in Python with Matplotlib. It's the same warehouse Velabyte runs on.
+The four restoration contractors I worked for during my eight years on NYC facades, measured by DOB jobs per year under each firm's General Contractor license. The data comes from my own BigQuery warehouse (NYC Open Data → raw lake → bronze → silver), queried and drawn in Python with Matplotlib. It's the same warehouse Velabyte runs on.
 
 ---
 

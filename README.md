@@ -59,11 +59,41 @@ I spent eight years on NYC high-rise exterior restoration and construction, on s
 
 ### How it's built
 
-- **Full-stack Rust:** one Dioxus 0.7 codebase compiles to a WebAssembly front end and an Axum server.
-- **End-to-end encrypted:** all traffic between the browser and the server goes through an Olm double-ratchet channel (vodozemac), on top of TLS.
-- **Live 3D city on any device:** vello renders the skyline on WebGPU, with a WebGL2 fallback. Each device gets a short real-time performance probe and falls back to a pre-rendered loop when it can't keep up.
-- **A three-tier data warehouse:** bronze, silver and gold layers in Google BigQuery, built from NYC Open Data (DOB, HPD, LPC, DOF, ACRIS) and the NYC 3D Building Model.
-- **Production SaaS:** Google Cloud Run, PostgreSQL and Turso/SQLite, Stripe billing, and SSO through Google, Microsoft and LinkedIn.
+```mermaid
+flowchart LR
+  subgraph Sources
+    A[NYC Open Data<br/>permits · filings · property · housing · landmarks]
+    B[City geometry<br/>3D building model · tax map · districts · open map data]
+  end
+  subgraph Warehouse["Warehouse · Google BigQuery"]
+    C[Bronze<br/>raw, as published] --> D[Silver<br/>cleaned, typed, joined to buildings] --> E[Gold<br/>analysis-ready marts]
+  end
+  subgraph Serving
+    F[Dashboards & reports]
+    G[Geospatial snapshots]
+    H[AI analyst]
+  end
+  A --> C
+  B --> C
+  E --> F
+  E --> G
+  E --> H
+```
+
+**Data architecture**
+- **Medallion warehouse:** raw city data lands in a bronze layer exactly as published. Silver cleans, types and de-duplicates it and ties every record to a building. Gold holds analysis-ready marts by building, contractor, neighborhood and year.
+- **Building-centric model:** permits, filings, inspections, sales, assessments, housing and landmark records share one building key, so any building's full history is a single lookup and portfolio questions stay a single query.
+- **Geometry as first-class data:** 3D building geometry, tax lots and historic district boundaries sit in the warehouse beside the records, so measurements and spatial joins run where the data lives.
+- **Containerized pipelines:** ingestion and transforms run as dependency-ordered container jobs on Cloud Run, so each layer rebuilds only after the layers it depends on.
+- **Fast serving layers:** BigQuery stays the source of truth. Dashboards read pre-aggregated gold tables, and map views read compact geospatial snapshots, so the app never scans raw data.
+- **Documented for people and AI:** every table and column carries a business description and data type, which powers the AI analyst and keeps its answers grounded in the schema.
+- **Privacy by design:** public surfaces show signals and tiers computed inside the warehouse, never personal contact details.
+
+**Application**
+- **Full-stack Rust:** one codebase compiles to a WebAssembly front end and its server.
+- **Encrypted end to end:** application-layer encryption with rotating keys protects every request and response, on top of TLS.
+- **Live 3D city on any device:** the skyline renders on the GPU in the browser, and each device gets a short performance probe that falls back to a pre-rendered loop when it can't keep up.
+- **Production SaaS:** serverless containers on Google Cloud, transactional and analytical stores kept separate, and subscription billing.
 
 <p>
   <img alt="Rust" src="https://img.shields.io/badge/Rust-0b1220?style=flat-square&logo=rust&logoColor=ffa500">
@@ -74,6 +104,8 @@ I spent eight years on NYC high-rise exterior restoration and construction, on s
   <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0b1220?style=flat-square&logo=postgresql&logoColor=00aaff">
   <img alt="SQLite" src="https://img.shields.io/badge/Turso%20%C2%B7%20SQLite-0b1220?style=flat-square&logo=sqlite&logoColor=00aaff">
   <img alt="Cloud Run" src="https://img.shields.io/badge/Cloud%20Run-0b1220?style=flat-square&logo=googlecloud&logoColor=ffa500">
+  <img alt="DuckDB" src="https://img.shields.io/badge/DuckDB-0b1220?style=flat-square&logo=duckdb&logoColor=ffa500">
+  <img alt="GeoParquet" src="https://img.shields.io/badge/GeoParquet-0b1220?style=flat-square&logo=apacheparquet&logoColor=00aaff">
   <img alt="Stripe" src="https://img.shields.io/badge/Stripe-0b1220?style=flat-square&logo=stripe&logoColor=ffa500">
   <img alt="Python" src="https://img.shields.io/badge/Python-0b1220?style=flat-square&logo=python&logoColor=ffa500">
 </p>

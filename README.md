@@ -65,9 +65,9 @@ flowchart LR
     A[NYC Open Data<br/>permits · filings · property · housing · landmarks]
     B[City geometry<br/>3D building model · tax map · districts · open map data]
   end
-  L[(Raw lake<br/>source files, as published)]
+  L[(Raw lake<br/>Parquet, as published)]
   subgraph Warehouse["Warehouse · Google BigQuery"]
-    C[Bronze<br/>relational model] --> D[Silver<br/>summarized wide tables] --> E[Gold<br/>analysis-ready marts]
+    C[Bronze<br/>3NF dimensional / galaxy model] --> D[Silver<br/>summarized wide tables] --> E[Gold<br/>analysis-ready marts]
   end
   S[Spice AI<br/>accelerated SQL · NL-to-SQL]
   subgraph Serving
@@ -82,18 +82,19 @@ flowchart LR
   E --> G
   S --> F
   S --> H
+  E -- NL-to-SQL --> H
 ```
 
 **Data architecture**
-- **Raw lake:** source files land untouched, exactly as the city publishes them, so every load can be replayed and audited.
-- **Bronze, relational model:** the raw data is modeled into typed fact and dimension tables with keys and relationships, the system of record for everything above it.
+- **Raw lake:** source data lands as Parquet with its content exactly as the city publishes it, so every load can be replayed and audited.
+- **Bronze, 3NF dimensional / galaxy model:** the raw data is normalized into typed fact and shared dimension tables. Many fact tables share the same dimensions (a galaxy, or fact-constellation, schema), and this layer is the system of record for everything above it.
 - **Silver, summarized wide tables:** bronze is joined and rolled up into wide, denormalized tables per subject and time grain, so heavy joins happen once in the pipeline, not at query time.
 - **Gold, analysis-ready marts:** silver is shaped into marts that each serve a dashboard, map or report directly.
 - **Building-centric model:** permits, filings, inspections, sales, assessments, housing and landmark records share one building key from bronze up, so any building's full history is a single lookup and portfolio questions stay a single query.
 - **Geometry as first-class data:** 3D building geometry, tax lots and historic district boundaries sit in the warehouse beside the records, so measurements and spatial joins run where the data lives.
 - **Containerized pipelines:** ingestion and transforms run as dependency-ordered container jobs on Cloud Run, so each layer rebuilds only after the layers it depends on.
 - **Spice AI serving layer:** the Spice AI runtime materializes gold marts into local accelerated copies next to the app, so dashboards query them with low-latency SQL instead of going back to the warehouse. BigQuery stays the source of truth, and map views run spatial queries with SedonaDB over compact GeoParquet snapshots exported from the warehouse, so the app never scans raw data.
-- **AI analyst on Spice AI:** plain-English questions become SQL through Spice AI's natural-language-to-SQL, checked and corrected by tools before they run against the same accelerated marts the dashboards use.
+- **AI analyst on Spice AI and BigQuery:** both serve natural-language-to-SQL. Spice AI answers from the accelerated marts the dashboards use, and BigQuery answers against the warehouse itself. Generated SQL is checked and corrected by tools before it runs.
 - **Documented for people and AI:** every table and column carries a business description and data type, which grounds the analyst's SQL in the real schema.
 - **Privacy by design:** public surfaces show signals and tiers computed inside the warehouse, never personal contact details.
 

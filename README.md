@@ -82,7 +82,7 @@ flowchart LR
 **Application**
 - **Full-stack Rust:** one codebase compiles to a WebAssembly front end and its server.
 - **Encrypted end to end:** application-layer encryption with rotating keys protects every request and response, on top of TLS.
-- **Live 3D city on any device:** the skyline renders on the GPU in the browser, and each device gets a short performance probe that falls back to a pre-rendered loop when it can't keep up.
+- **Live 3D city on any device:** the skyline renders on the GPU right in the browser, with nothing to install.
 - **Production SaaS:** serverless containers on Google Cloud, transactional and analytical stores kept separate, and subscription billing.
 
 <p>

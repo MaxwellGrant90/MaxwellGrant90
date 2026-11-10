@@ -5,7 +5,7 @@
 
 ### Hi, I'm Maxwell Grant, founder of [Velabyte](https://velabyte.app)
 
-I spent eight years on NYC high-rise exterior restoration and construction, on scaffolds and swing stages along the city's facades. Then I learned to build the data side of the industry I came from. **Velabyte** is the result: business intelligence for real estate firms, engineers, architects and construction trades, with ready-made analytics and process automation built on NYC's public building records.
+I spent twelve years on NYC high-rise exterior restoration and construction, on scaffolds and swing stages along the city's facades. Then I learned to build the data side of the industry I came from. **Velabyte** is the result: business intelligence for real estate firms, engineers, architects and construction trades, with ready-made analytics and process automation built on NYC's public building records.
 
 <p>
   <a href="https://velabyte.app"><img alt="velabyte.app" src="https://img.shields.io/badge/velabyte.app-0b1220?style=flat-square&logo=googlechrome&logoColor=00aaff"></a>
